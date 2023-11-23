@@ -22,7 +22,7 @@ export default function NavLinks() {
             key={link.name}
             href={link.path}
             className={pathname === link.path ?
-              "w-4/5 m-auto my-2 py-2 px-2 bg-colorPrimary cursor-pointer rounded-xl" :
+              "w-4/5 m-auto my-2 py-2 px-2 bg-colorPrimary cursor-pointer rounded-xl shadow" :
               "w-4/5 m-auto my-2 py-2 px-2 hover:bg-colorPrimary cursor-pointer rounded-xl"}
           >
             <li className="flex items-center text-light dark:text-dark text-xl">
