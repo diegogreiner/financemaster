@@ -1,7 +1,10 @@
 'use client'
+import { Fetch } from "@/helpers/fetch";
 import ApexChart from "react-apexcharts";
 
 export default function ApexChartArea() {
+
+  const data = Fetch('json/last/USD-BRL').then((response) => response.data)
 
   const options = {
     chart: {

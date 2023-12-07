@@ -1,7 +1,7 @@
 import ContainerMain from "@/components/ContainerMain";
 import GraficArea from "@/components/GraficArea";
 import GraficRadialBar from "@/components/GraficRadialBar";
-import Info from "@/components/Info";
+import Info from "@/components/AddTransation";
 import Logs from "@/components/Logs";
 
 export default function Home() {

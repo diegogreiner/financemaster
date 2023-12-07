@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./global.css";
 import Header from "@/components/Header";
+import Auth from "@/auth/Auth";
+import FormProvider from "@/contexts/Form";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +18,14 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className="bg-light dark:bg-dark flex w-screen h-screen">
-        <Header />
-        {children}
+        <FormProvider>
+          <Auth>
+            <>
+              <Header />
+              {children}
+            </>
+          </Auth>
+        </FormProvider>
       </body>
     </html>
   );
